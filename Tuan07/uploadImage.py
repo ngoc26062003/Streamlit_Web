@@ -1,15 +1,7 @@
 import subprocess
 
 # Sử dụng subprocess để cài đặt OpenCV
-result = subprocess.run(["pip", "install", "opencv-python"])
-
-# Kiểm tra kết quả cài đặt
-if result.returncode == 0:
-    print("OpenCV đã được cài đặt thành công.")
-else:
-    print("Cài đặt OpenCV thất bại. Kiểm tra log để biết lý do.")
-
-# Import OpenCV sau khi đã cài đặt
+result = subprocess.run(["pip", "install", "opencv-contrib-python-headless"])
 
 import streamlit as st
 import cv2
